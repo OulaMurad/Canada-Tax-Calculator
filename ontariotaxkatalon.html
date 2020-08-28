@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>ontariotaxkatalon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">firstbracket tax for10000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>100000</td>
+</tr>
+<tr><td>click</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td>5</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=goodMessage<datalist><option>id=goodMessage</option><option>//p[@id='goodMessage']</option><option>//form[@id='calculate']/p[4]</option><option>//p[4]</option><option>css=#goodMessage</option></datalist></td><td>Ontario tax 100000 is 7836.8748</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">second bracket tax for 50000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>50000</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=goodMessage<datalist><option>id=goodMessage</option><option>//p[@id='goodMessage']</option><option>//form[@id='calculate']/p[4]</option><option>//p[4]</option><option>css=#goodMessage</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=goodMessage<datalist><option>id=goodMessage</option><option>//p[@id='goodMessage']</option><option>//form[@id='calculate']/p[4]</option><option>//p[4]</option><option>css=#goodMessage</option></datalist></td><td>Ontario tax 50000 is 2897.637</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">third bracket tax for 90000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>90000</td>
+</tr>
+<tr><td>click</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td>5</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=goodMessage<datalist><option>id=goodMessage</option><option>//p[@id='goodMessage']</option><option>//form[@id='calculate']/p[4]</option><option>//p[4]</option><option>css=#goodMessage</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=goodMessage<datalist><option>id=goodMessage</option><option>//p[@id='goodMessage']</option><option>//form[@id='calculate']/p[4]</option><option>//p[4]</option><option>css=#goodMessage</option></datalist></td><td>Ontario tax 90000 is 6720.8748</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">forth bracket tax for200000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>200000</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=amount<datalist><option>id=amount</option><option>//span[@id='amount']</option><option>//p[@id='goodMessage']/span</option><option>//span</option><option>css=#amount</option></datalist></td><td>200000</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">fifth bracket tax for 300000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>300000</td>
+</tr>
+<tr><td>click</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td>20</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=goodMessage<datalist><option>id=goodMessage</option><option>//p[@id='goodMessage']</option><option>//form[@id='calculate']/p[4]</option><option>//p[4]</option><option>css=#goodMessage</option></datalist></td><td>Ontario tax 300000 is 32457</td>
+</tr>
+</tbody></table>
+</body>
+</html>

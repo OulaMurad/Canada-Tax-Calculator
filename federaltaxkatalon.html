@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>federaltaxkatalon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1st bracket tax for 10000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>10000</td>
+</tr>
+<tr><td>click</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td>30</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>xpath=(//p[@id='goodMessage'])[2]<datalist><option>xpath=(//p[@id='goodMessage'])[2]</option><option>//form[@id='calculate']/p[5]</option><option>//p[5]</option></datalist></td><td>Federal tax 10000 is 1500</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">2d bracket tax foe 50000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>50000</td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td>25</td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>xpath=(//p[@id='goodMessage'])[2]<datalist><option>xpath=(//p[@id='goodMessage'])[2]</option><option>//form[@id='calculate']/p[5]</option><option>//p[5]</option></datalist></td><td>Federal tax 50000 is 7759.19</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">3rd bracket tax for 100000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>100000</td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td>40</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=amount1<datalist><option>id=amount1</option><option>//span[@id='amount1']</option><option>xpath=(//p[@id='goodMessage']/span)[3]</option><option>//p[5]/span</option><option>css=#amount1</option></datalist></td><td>100000</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">4th bracket tax for 200000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>200000</td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td>35</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>xpath=(//p[@id='goodMessage'])[2]<datalist><option>xpath=(//p[@id='goodMessage'])[2]</option><option>//form[@id='calculate']/p[5]</option><option>//p[5]</option></datalist></td><td>Federal tax 200000 is 46316.48</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">5th bracket tax for 300000</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:10001/?<datalist><option>http://localhost:10001/?</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=income<datalist><option>id=income</option><option>//input[@id='income']</option><option>//form[@id='calculate']/input</option><option>//input</option><option>css=#income</option></datalist></td><td>300000</td>
+</tr>
+<tr><td>click</td><td>id=calculate<datalist><option>id=calculate</option><option>//form[@id='calculate']</option><option>//form</option><option>css=#calculate</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=deducted<datalist><option>id=deducted</option><option>//input[@id='deducted']</option><option>//form[@id='calculate']/input[2]</option><option>//input[2]</option><option>css=#deducted</option></datalist></td><td>15</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='calculate']/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//html<datalist><option>//html</option><option>css=html</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>xpath=(//p[@id='goodMessage'])[2]<datalist><option>xpath=(//p[@id='goodMessage'])[2]</option><option>//form[@id='calculate']/p[5]</option><option>//p[5]</option></datalist></td><td>Federal tax 300000 is 79317</td>
+</tr>
+</tbody></table>
+</body>
+</html>

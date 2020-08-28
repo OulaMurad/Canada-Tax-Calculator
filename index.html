@@ -1,0 +1,22 @@
+<head>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <form id="calculate">
+    <label for="income">Enter the Taxable Income</label>
+    <input id="income" />
+    <p></p>
+   <label for="deducted">Enter Tax deducted</label>
+    <input id="deducted" />
+    
+<p></p>
+    <button type="submit">Calculate</button>
+ 
+  <p id="errorMessage" style="color:red"></p>
+  <p id="goodMessage">Ontario tax  <span id="amount">0</span> is <span id="ontariotax">0</span></p>
+ <p id="goodMessage">Federal tax  <span id="amount1">0</span> is <span id="federaltax">0</span></p>
+  <p id="goodMessage">Total tax  <span id="amount2">0</span> is <span id="totaltax">0</span></p>
+ <p id="goodMessage">Owing  <span id="amount3">0</span> is <span id="owing">0</span></p>
+  <script type="module" src="js/main.js"></script>
+</form>
+</body>
